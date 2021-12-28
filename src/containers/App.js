@@ -10,7 +10,6 @@ import Scroll from '../components/Scroll';
 function App() {
     const [robots, setRobots] = useState([]);
     const [searchfield, setSearchField] = useState('');
-    const [count, setCount] = useState(0);
 
 
     useEffect(() => {
@@ -31,7 +30,6 @@ function App() {
         (
             <div className='tc'>
                 <h1 className='f1'>RoboFriends</h1>
-                <button onClick={setCount}>Click me!</button>
                 <SearchBox searchChange={onSearchChange}/>
                 <Scroll>
                     <ErrorBoundry>
